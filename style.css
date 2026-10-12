@@ -150,3 +150,46 @@ section {
 .footer p {
     margin-bottom: 0;
 }
+
+/* větší obrazovky */
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 50px 16px;
+    }
+
+    .header-inner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav {
+        gap: 28px;
+    }
+
+    .intro {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .intro-text {
+        flex: 1;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
